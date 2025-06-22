@@ -1,4 +1,6 @@
 import React from 'react';
+const portrait = new URL('../assets/portrait2.png', import.meta.url).href;
+
 
 export const Hero = () => {
   return <section id="home" className="pt-24 pb-16 md:py-32">
@@ -24,7 +26,7 @@ export const Hero = () => {
           <div className="w-full md:w-1/2 relative">
             <div className="aspect-square max-w-md mx-auto relative">
               <div className="absolute inset-0 bg-indigo-900/10 rounded-3xl transform rotate-6"></div>
-                <img src="/src/assets/portrait2.png" alt="Japanese garden with cherry blossoms" className="rounded-3xl object-cover w-full h-full relative z-10 shadow-lg" />
+                <img src={portrait} alt="Japanese garden with cherry blossoms" className="rounded-3xl object-cover w-full h-full relative z-10 shadow-lg" />
             </div>
           </div>
         </div>

@@ -1,22 +1,27 @@
 import React from 'react';
 import { ExternalLinkIcon } from 'lucide-react';
 export const Projects = () => {
+  const ndovu = new URL('../assets/ndovu.png', import.meta.url).href;
+  const nexthive = new URL('../assets/nexthive.png', import.meta.url).href;
+  const travella = new URL('../assets/travella.png', import.meta.url).href;
+
+
   const projects = [{
     title: 'Ndovu Invest',
     description: 'Ndovu is a digital investment platform designed to make investments in local and global financial markets more accessible, secure and affordable.',
-    image: '/src/assets/ndovu.png',
+    image: ndovu,
     tags: ['React', 'NestJS', 'NodeJS'],
     url: 'https://portal.ndovu.co/auth/login'
   }, {
     title: 'Next Hive',
     description: 'A minimalist portfolio template celebrating the beauty of imperfection.',
-    image: '/src/assets/nexthive.png',
+    image: nexthive,
     tags: ['HTML/CSS', 'JavaScript', 'Webflow'],
     url: 'https://nexthive.webflow.io/'
   }, {
     title: 'Travella',
     description: "Travella was a web app that automated travel management processes of Andela employees.",
-    image: '/src/assets/travella.png',
+    image: travella,
     tags: ['React', 'Express.js', 'Postgresql']
   }];
   
